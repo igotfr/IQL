@@ -1,9 +1,9 @@
-create.database("app");
+createDatabase("app");
 
-create.database(["app", "barbearia"]);
+createDatabase(["app", "barbearia"]);
 
 __________________________________________________________
 
-create.database("app").collection("Users");
+database("app").createCollection("Users");
 
-create.database("app").collection(["Users", "Products"]);
+database("app").createCollection(["Users", "Products"]);
