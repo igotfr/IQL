@@ -34,5 +34,10 @@ database("app").collection("Users").insertDocument([
     nome: "Vicente",
     idade: 32
   }, [nome, idade]
-]
-]);
+],
+{
+  _id: ID(nd876dff),
+  nome: "Meterssaker",
+  idade: 29
+}
+], [_id, nome]); // for not specified, in this case, "Meterssaker"
