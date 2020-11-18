@@ -4,7 +4,6 @@ database("app").collection("Users").findDocument(({ nome, idade }) -> nome == "R
 
 ___________________________________________________________________________________________________________________________________________________
 
-
 database("app").collection("Users").findDocument([
   [ user -> user.nome == "Ronaldo" && user.idade > 8, [_id, nome] ],
   [ user -> user.idade > 8, [nome, idade] ],
